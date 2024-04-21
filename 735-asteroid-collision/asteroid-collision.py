@@ -11,7 +11,7 @@ class Solution:
                 elif abs(stack[-1])==abs(stack[-2]):
                     stack.pop()
                     stack.pop()
-                elif abs(stack[-1])<abs(stack[-2]):
+                else:
                     stack.pop()
                 
         return(stack)
