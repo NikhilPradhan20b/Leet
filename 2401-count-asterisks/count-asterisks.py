@@ -7,10 +7,16 @@ class Solution:
                 if value=='*':
                     count+=1
                 elif value =='|':
-                    inside = not inside
+                    if inside:
+                        inside = False
+                    else:
+                        inside = True
             else:
                 if value =='|':
-                    inside = not inside
+                    if inside:
+                        inside = False
+                    else:
+                        inside = True
             
         return count
             
