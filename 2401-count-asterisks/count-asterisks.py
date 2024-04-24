@@ -2,7 +2,7 @@ class Solution:
     def countAsterisks(self, s: str) -> int:
         count = 0
         inside = False
-        for index,value in enumerate(s):
+        for value in s:
             if not inside:
                 if value=='*':
                     count+=1
