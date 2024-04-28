@@ -9,7 +9,7 @@ class Solution:
                 return False
             else:
                 if s[i] not in hasm.keys():
-                    if t[i] in (hasm.values()):
+                    if t[i] in set(hasm.values()):
                         return False
                     hasm[s[i]] = t[i]
                 else:
