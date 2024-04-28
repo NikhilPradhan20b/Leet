@@ -19,6 +19,5 @@ class Solution:
                 # elif s[i] in set(hasm.values()):
                 #     return False
             i+=1
-            print(i)
         return True
         
