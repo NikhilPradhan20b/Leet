@@ -5,7 +5,6 @@ class Solution:
         s = 0
         while j<len(haystack):
             if haystack[j]==needle[s]:
-                print(haystack[i:j+1])
                 j+=1
                 s+=1
                 if s==len(needle):
