@@ -1,4 +1,5 @@
 from collections import defaultdict
+#just to check whether works or not// this is O(nlogn) solution
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         hasm2 = defaultdict(list)
@@ -9,11 +10,9 @@ class Solution:
                 hasm[each] = 1
             else:
                 hasm[each]+=1
-        print(hasm)
         
         for key, value in hasm.items():
                 hasm2[value].append(key)
-        print(hasm2)
             
         new = list(hasm2.keys())
         new.sort()
