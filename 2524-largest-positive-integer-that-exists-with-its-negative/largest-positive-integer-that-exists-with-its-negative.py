@@ -3,7 +3,6 @@ class Solution:
         nums.sort()
         i = 0
         j = len(nums)-1
-        print(nums)
         while i<j:
             if nums[i] * -1 == nums[j]:
                 return nums[j]
