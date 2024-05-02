@@ -1,5 +1,4 @@
 from collections import defaultdict
-#just to check whether works or not// this is O(nlogn) solution
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         hasm2 = defaultdict(list)
