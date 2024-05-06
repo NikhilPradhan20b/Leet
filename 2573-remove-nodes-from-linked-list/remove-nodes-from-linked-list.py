@@ -9,10 +9,6 @@ class Solution:
         arr = []
         stack= []
         while new_node is not None:
-            # print(new_node.val)
-            # if new_node.next is not None:
-            #     if new_node.val < new_node.next.val:
-            #         arr.append(new_node.next.val)
             arr.append(new_node.val)
             new_node = new_node.next
         for i in range(len(arr)):
@@ -28,8 +24,6 @@ class Solution:
                     stack.append(arr[i])
             else:
                 stack.append(arr[i])
-        print(stack)
-        
         if not stack:
             return head
         else:
