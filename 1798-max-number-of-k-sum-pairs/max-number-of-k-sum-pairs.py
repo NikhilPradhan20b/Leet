@@ -7,7 +7,6 @@ class Solution:
                 hasm[k-num] = 1
             else:
                 hasm[k-num] +=1
-        print(hasm)
 
         for num in nums:
             if num in hasm.keys() and k-num==num:
@@ -20,26 +19,4 @@ class Solution:
                     hasm[k-num]-=1
                     operations+=1
         return operations
-
-
-
-        # return(operations)
-        # i = 0
-        # operations = 0
-        # delete = False
-        # while i<len(nums):
-        #     to_find = k-nums[i]
-        #     j = i+1
-        #     while j<len(nums):  
-        #         if nums[j]==to_find:
-        #             operations+=1
-        #             nums.pop(j)
-        #             nums.pop(i)
-        #             delete = True
-        #             break
-        #         j+=1
-        #     if not delete:
-        #         i+=1
-        #     delete=False
-        # return operations
-            
+        
