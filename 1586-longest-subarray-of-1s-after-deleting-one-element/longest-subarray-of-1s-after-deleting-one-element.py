@@ -4,7 +4,6 @@ class Solution:
         for i in range(len(nums)):
             if nums[i]==0:
                 hasm[i]=nums[i]
-        print(hasm)
         ans = 0
         if hasm:
             if len(hasm)==1:
@@ -13,7 +12,6 @@ class Solution:
             test.append(len(nums))
             if len(test)==2:
                 return(max(test[1]-test[0]-1,test[1]-1,len(nums)-test[1]-1))
-            print(test)
             for i in range(len(test)):
                 if i==0:
                     ans = max(ans,test[i+1]-1)
