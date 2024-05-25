@@ -10,8 +10,8 @@ class Solution:
                 return(len(nums)-1)
             test = list(hasm.keys())
             test.append(len(nums))
-            if len(test)==2:
-                return(max(test[1]-test[0]-1,test[1]-1,len(nums)-test[1]-1))
+            # if len(test)==2:
+            #     return(max(test[1]-test[0]-1,test[1]-1,len(nums)-test[1]-1))
             for i in range(len(test)):
                 if i==0:
                     ans = max(ans,test[i+1]-1)
