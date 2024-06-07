@@ -5,9 +5,9 @@ class Solution:
             l=float('inf')
             for each in dictionary: 
                 n = len(each)
-                word = arr[i][:n]
-                if each==word:
-                    if n<l:
+                if n<l:
+                    word = arr[i][:n]
+                    if each==word:
                         arr[i]=each
                         l=n
         return " ".join(arr)
